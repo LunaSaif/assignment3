@@ -6,7 +6,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 # Load the dataset
-data_url = "https://raw.githubusercontent.com/LunaSaif/assignment/main/COVID-19%20Coronavirus.csv"
+data_url = "https://github.com/LunaSaif/assignment3/blob/main/COVID-19%20Coronavirus.csv"
 data = pd.read_csv('covid_data.csv')  
 
 # Initialize the Dash app
