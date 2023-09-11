@@ -8,14 +8,19 @@ server = app.server
 
 data_url = "https://raw.githubusercontent.com/LunaSaif/assignment3/main/COVID-19 Coronavirus.csv"
 data = pd.read_csv(data_url)
-    
-    # Add the first bar chart
+    # Limit the data to the first 10 rows
+data = data.head(10)
+
+app.layout = html.Div([
+    html.H1("Luna Assignment 3"),
+
+    # bar chart
     dcc.Graph(
         id='total-cases-bar-chart',
         figure=px.bar(data, x='Country', y='Total Cases', title='Total Cases by Country'),
     ),
     
-    # Add the second bar chart
+    # second bar chart
     dcc.Graph(
         id='total-deaths-bar-chart',
         figure=px.bar(data, x='Country', y='Total Deaths', title='Total Deaths by Country'),
