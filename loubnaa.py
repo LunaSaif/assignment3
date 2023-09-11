@@ -9,8 +9,6 @@ from dash.dependencies import Input, Output
 data_url = "https://github.com/LunaSaif/assignment3/blob/main/COVID-19%20Coronavirus.csv"
 data = pd.read_csv('covid_data.csv')  
 
-# Initialize the Dash app
-app = dash.Dash(__name__)
 
 # Define the app layout
 app.layout = html.Div([
