@@ -8,9 +8,6 @@ server = app.server
 
 data_url = "https://raw.githubusercontent.com/LunaSaif/assignment3/main/COVID-19 Coronavirus.csv"
 data = pd.read_csv(data_url)
-
-app.layout = html.Div([
-    html.H1("Assignment3"),
     
     # Add the first bar chart
     dcc.Graph(
