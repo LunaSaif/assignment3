@@ -6,8 +6,8 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 # Load the dataset
-data_url = "https://github.com/LunaSaif/assignment3/blob/main/COVID-19%20Coronavirus.csv"
-data = pd.read_csv('covid_data.csv')  
+data_url = "https://github.com/LunaSaif/assignment3/blob/main/COVID-19%20Coronavirus.csv" 
+data = pd.read_csv(data_url, encoding='ISO-8859-1')
 
 
 # Define the app layout
